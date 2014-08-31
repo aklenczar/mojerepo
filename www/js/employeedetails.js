@@ -6,7 +6,7 @@ $('#detailsPage').live('pageshow', function(event) {
 function displayEmployee(data) {
 	var employee = data.item;
 	console.log(employee);
-	$('#employeePic').attr('src', 'pics/' + employee.picture);
+	$('#employeePic').attr('src', 'http://klenczar.home.pl/testapp/pics/' + employee.picture);
 	$('#fullName').text(employee.firstName + ' ' + employee.lastName);
 	$('#employeeTitle').text(employee.title);
 	$('#city').text(employee.city);
