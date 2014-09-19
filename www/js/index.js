@@ -18,7 +18,7 @@ $(document).on('pageinit', '#login', function(){
                         },
                         success: function (result) {
                             if(result.status) {
-                                $.mobile.changePage("#second");                        
+                                $.mobile.changePage("index_bkp.html");                        
                             } else {
                                 alert('Logon unsuccessful!');
                             }
