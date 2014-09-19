@@ -3,11 +3,11 @@ $(document).on('pageinit', '#login', function(){
         if($('#username').val().length > 0 && $('#password').val().length > 0){
             // Send data to server through the ajax call
             // action is functionality we want to call and outputJSON is our data
-                $.ajax({url: 'http://www.informatyk.tychy.pl/services/check.php',
+                $.ajax({url: 'http://lokalizatorlekarza.pl/services/check.php',
                     data: {action : 'login', formData : $('#check-user').serialize()},
-                    type: 'get',                 
+                    type: 'post',                 
                     async: 'true',
-                    dataType: 'jsonp',
+                    dataType: 'json',
                     beforeSend: function() {
                         // This callback function will trigger before data is sent
                         $.mobile.loading('show', {theme:"a", text:"Please wait...", textonly:true, textVisible: true}); // This will show ajax spinner
@@ -37,7 +37,7 @@ $(document).on('pageinit', '#login', function(){
 });
  
 $(document).on('pagebeforeshow', '#second', function(){
-    $.mobile.activePage.find('.ui-content').html('Welcome ' + user.name)
+    $.mobile.activePage.find('.ui-content').html('Welcome ' + user.name);
 });
  
 var user = {
