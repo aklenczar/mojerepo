@@ -1,4 +1,4 @@
-var serviceURL = "https://lokalizatorlekarza.pl/services/";
+var serviceURL = "http://lokalizatorlekarza.pl/services/";
 
 var employees;
 
