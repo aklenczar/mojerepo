@@ -3,7 +3,7 @@ $(document).on('pageinit', '#login', function(){
         if($('#username').val().length > 0 && $('#password').val().length > 0){
             // Send data to server through the ajax call
             // action is functionality we want to call and outputJSON is our data
-                $.ajax({url: 'https://lokalizatorlekarza.pl/services/check.php',
+                $.ajax({url: 'http://lokalizatorlekarza.pl/services/check.php',
                     data: {action : 'login', formData : $('#check-user').serialize()},
                     type: 'get',                 
                     async: 'true',
