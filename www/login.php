@@ -3,10 +3,15 @@
 <head>
     <title>jQM Complex Demo</title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>   
+    <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.0rc1.min.js"></script>
+    <script src="js/employeelist.js"></script>
+    <script src="js/employeedetails.js"></script>
+    <script src="js/reportlist.js"></script>
     <script src="js/index.js"></script>
+
 </head>
 <body>
     <div data-role="page" id="login" data-theme="a">
