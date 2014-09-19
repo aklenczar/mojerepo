@@ -18,18 +18,18 @@ $(document).on('pageinit', '#login', function(){
                         },
                         success: function (result) {
                             if(result.status) {
-                                $.mobile.changePage("opcje.html");                        
+                                $.mobile.changePage("#employeeListPage");                        
                             } else {
-                                alert('Logon unsuccessful!');
+                                alert('Logowanie zakończone niepowodzeniem!');
                             }
                         },
                         error: function (request,error) {
                             // This callback function will trigger on unsuccessful action               
-                            alert('Network error has occurred please try again!');
+                            alert('Wystąpił problem z siecią. Spróbuj ponownie.!');
                         }
                     });                  
             } else {
-                alert('Please fill all necessary fields');
+                alert('Wpisz login oraz haslo.');
             }          
             return false; // cancel original event to prevent form submitting
         });   
