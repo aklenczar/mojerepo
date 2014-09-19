@@ -10,7 +10,7 @@ function getEmployeeList() {
 	$.getJSON(serviceURL + 'getemployees.php', function(data) {
 		$('#employeeList li').remove();
 		employees = data.items;
-		$.each(employees, function(opcje, employee) {
+		$.each(employees, function(index, employee) {
 			$('#employeeList').append('<li><a href="employeedetails.html?id=' + employee.id + '">' +
 					'<img src="https://lokalizatorlekarza.pl/pics/' + employee.picture + '" data-rel="external"/>' +
 					'<h4>' + employee.firstName + ' ' + employee.lastName + '</h4>' +
