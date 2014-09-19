@@ -1,21 +1,33 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<title>LokalizatorLekarza.pl</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css" />
+<link rel="stylesheet" href="css/styles.css" />
 </head>
     
 <body>
+        
+<div id="employeeListPage" data-role="page" >
 
-<div id="opcje" data-role="page" data-add-back-btn="true">
-
-	<div data-role="header">
-		<h1>Opcje</h1>
+	<div data-role="header" data-position="fixed">
+		<h1>Lekarze Specjalisci</h1>
+		<a href="logowanie.html" data-icon="gear" class="ui-btn-right">Logowanie</a>
+	<span class="ui-title" />
 	</div>
 
 	<div data-role="content">
-         
+         <ul id="employeeList" data-role="listview" data-autodividers="true" data-filter-placeholder="Wyszukaj lekarza..." data-filter="true"></ul>
     </div>		
 
 </div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.0rc1.min.js"></script>
+<script src="js/employeelist.js"></script>
+<script src="js/employeedetails.js"></script>
+<script src="js/reportlist.js"></script>
 
 </body>
 
